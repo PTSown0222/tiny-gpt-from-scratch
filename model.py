@@ -248,7 +248,6 @@ def softmax_overflow_demo(large_value):
     """
     # TODO: exponentiate large_value via array_exp and report whether it is inf.
     arr = np.array([large_value])
-    results = dict()
     numerator = array_exp(arr)
     naive_exp = float(numerator[0])
     overflowed = bool(np.isinf(naive_exp))
